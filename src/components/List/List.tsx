@@ -1,3 +1,4 @@
+// import { useState } from "react";
 import "./List.css"
 
 const optionList = [
@@ -27,25 +28,33 @@ const optionList = [
 
 const List = () => {
 
-  // const [selectedOption, selectedOption] = useState<string>("");
+  // const [selectedOptionHeroe, setSelectedOptionHeroe] = useState<string>("");
 
+  // function handleHeroeCard() {
+
+  // } antes de criar a função que irá aparecer o carrd iremos fazer os cards em si para chamálos
 
   return (
     <div>
       <form>
-      <label>Classes:</label>
-      <select id="classHeroe">
-        {optionList.map((option, index) => (
-          <option key={index} value={option.classe}>{option.classe}</option>
-        ))}
-      </select>
+      <div className="containerClassHeroe">
+        <label>Classes:</label>
+        <select className="classHeroe">
+          {optionList.map((option, index) => (
+            <option key={index} value={option.classe}>{option.classe}</option>
+          ))}
+        </select>
+      </div>
 
-      <label>Características:</label>
-      <select id="caractereHeroe">
-        {/* {optionList.map((option, index) => (
-
-        ))} */}
-      </select>
+      <div className="containerCaractereHeroe">
+        <label>Características:</label>
+        <select className="caractereHeroe">
+          {optionList.map((option, index) => (
+            <option key={index} value={option.caracteristica}>{option.caracteristica}</option>
+          ))}
+        </select>
+        </div>
+        <button className="btnCreateHeroe" >Criar Herói</button>
       </form>
     </div>
   )

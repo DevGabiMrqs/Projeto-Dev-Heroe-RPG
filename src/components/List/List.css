@@ -1,0 +1,40 @@
+label {
+    padding-bottom: 5px;
+}
+
+.classHeroe {
+    border-radius: 6px;
+    padding: 4px;
+    border: none;
+    background-color: rgb(242, 244, 215);
+    width: 31vw;
+}
+
+.caractereHeroe {
+    border-radius: 6px;
+    padding: 4px;
+    border: none;
+    background-color: rgb(242, 244, 215);
+    width: 31vw;
+}
+
+.containerClassHeroe {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.containerCaractereHeroe {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.btnCreateHeroe {
+    font-weight: bold;
+    padding: 5px;
+    width: 31vw;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(208, 215, 114);
+}

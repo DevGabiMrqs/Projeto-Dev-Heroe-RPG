@@ -1,0 +1,17 @@
+.labelName {
+    padding-bottom: 5px;
+}
+
+.inputName {
+    border-radius: 6px;
+    padding: 5px;
+    border: none;
+    background-color:rgb(242, 244, 215);
+    width: 31vw;
+}
+
+.nameField{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}

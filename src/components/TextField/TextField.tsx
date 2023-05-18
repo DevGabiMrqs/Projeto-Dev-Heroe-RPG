@@ -2,9 +2,9 @@ import "./TextField.css"
 
 const TextField = () => {
   return (
-    <div>
+    <div className="nameField">
         <label className="labelName">Nome:</label>
-        <input className="inputName" type="text" placeholder="Infome seu nome de herói"></input>
+        <input className="inputName" type="text" placeholder="Digite o nome do seu herói..."></input>
     </div>
   )
 }

@@ -5,10 +5,14 @@ import "./Form.css"
 const Form = () => {
   return (
     <div className="form">
+      <div className="formContent">
         <div>
             <TextField/>
+        </div>
+        <div className="listField">
             <List />
         </div>
+      </div>
     </div>
   )
 }
