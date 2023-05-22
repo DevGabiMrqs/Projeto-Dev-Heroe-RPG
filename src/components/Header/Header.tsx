@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
         <h1 className="title">DEV HEROES RPG</h1>
-        <text className="infoText">Saudações! Informe seu nome, classe e característica e crie seu herói!</text>
+        <h6 className="infoText">Saudações! Informe seu nome, classe e característica e crie seu herói!</h6>
     </div>
   )
 }
