@@ -4,7 +4,6 @@ import Header from './components/Header/Header'
 
 function App() {
 
-  //chamar os componentes que serão renderizados
 
   return (
     <>
@@ -12,7 +11,7 @@ function App() {
       <Header/>
     </div>
     <div>
-      <Form />
+      <Form/>
     </div>
     </>
   )

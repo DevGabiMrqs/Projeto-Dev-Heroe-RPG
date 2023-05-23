@@ -45,9 +45,8 @@ const optionList: OptionL[] = [
 const List = () => {
   
   const [ selectedClass, setSelectedClass ] = useState<string>("");
-  const [ selectedImage, setSelectedImage ] = useState<any>(null);
+  const [ selectedImage, setSelectedImage ] = useState<any>('');
   const [ selectedCaractere, setSelectedCaractere ] = useState<string>("");
-  const [ showForm, setShowForm ] = useState<boolean>(true);
   
     const classHeroeSelected = (event: React.ChangeEvent<HTMLSelectElement>) => {
       setSelectedClass(event.target.value)
@@ -66,14 +65,12 @@ const List = () => {
 
         if(selectedOption) {
           setSelectedImage(selectedOption.image)
-          setShowForm(false)
       }
 
   };
 
   return (
     <div>
-      {showForm && !selectedImage && (
       <form onSubmit={handleHeroeCreateCard}>
       <div className="containerClassHeroe">
         <label>Classes:</label>
@@ -105,12 +102,9 @@ const List = () => {
 
         <button className="btnCreateHeroe" type="submit">Criar Herói</button>
       </form>
-      )}
-      {selectedImage && (
         <div className="selectedImage">
-          <img src={selectedImage}/>
+          <img className="cardHeroe" src={selectedImage}/>
         </div>
-      )}
     </div>
   )
 }

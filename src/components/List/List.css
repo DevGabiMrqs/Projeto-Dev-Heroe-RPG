@@ -38,3 +38,16 @@ label {
     border-radius: 6px;
     background-color: rgb(208, 215, 114);
 }
+
+.selectedImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+
+.cardHeroe {
+    border-radius: 8px;
+    width: 14vw;   
+}
