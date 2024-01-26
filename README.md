@@ -1,4 +1,4 @@
-# Projeto Dev-Heroe RPG
+# Projeto RPG
 
 -> Projeto feito com Reactjs e TypeScript!<br>
 -> Divertido de criar, a ideia é aparecer o Card do personagem que você escolheu!
